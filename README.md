@@ -31,11 +31,16 @@ This will disable the default fan control until the CPU reaches 90C.
 The `fan.sh` will control the fan in a linear fashion. To setup the fancurve the user can set the following variables:
 
 `temp_min` Determines the bottom temperature where the fan will be set to `fan_min`. Default is: **40**
+
 `temp_max` Determines the top temperature where the fan will be set to `fan_max`. Default is: **90**
+
 `fan_min` Determines the minimum speed of the fan, even below the the `temp_min`. Default is: **0**
+
 `fan_max` Determines the maximum speed of the fan, even above the `temp_max`. Default is: **255**
 
 The range of `fan_min` and `fan_max` is **0** to **255**
+
+The fanspeed is updated every 3 seconds.
 
 ### Enable fan.sh
 
